@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradR" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1a30" />
+      <stop offset="100%" stop-color="#1c304a" />
+    </linearGradient>
+    <linearGradient id="roofTile" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c2410c" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="cleanRoof" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f05a28" />
+      <stop offset="100%" stop-color="#fb923c" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="400" rx="16" fill="url(#bgGradR)" />
+
+  <g transform="translate(100, 70)">
+    <!-- Estrutura do Telhado em Duas Águas / Galpão e Edificação -->
+    <!-- Corpo da Casa / Prédio -->
+    <rect x="50" y="140" width="300" height="130" fill="#334155" />
+    <rect x="80" y="170" width="50" height="60" rx="3" fill="#93c5fd" opacity="0.8" />
+    <rect x="270" y="170" width="50" height="60" rx="3" fill="#93c5fd" opacity="0.8" />
+
+    <!-- Telhado Triângulo Base -->
+    <polygon points="200,20 30,140 370,140" fill="#1e293b" stroke="#475569" stroke-width="2" />
+
+    <!-- Lado Esquerdo do Telhado - Deteriorado / Limo -->
+    <polygon points="200,20 30,140 200,140" fill="#475569" />
+    <g stroke="#334155" stroke-width="2">
+      <line x1="160" y1="50" x2="60" y2="130" />
+      <line x1="180" y1="80" x2="90" y2="140" />
+    </g>
+
+    <!-- Lado Direito do Telhado - Restaurado, Limpo e Impermeabilizado com Resina Térmica -->
+    <polygon points="200,20 370,140 200,140" fill="url(#cleanRoof)" />
+    <!-- Fileiras de Telhas Novas/Restauradas -->
+    <g stroke="#ffedd5" stroke-width="2" opacity="0.6">
+      <line x1="200" y1="35" x2="230" y2="140" />
+      <line x1="200" y1="35" x2="265" y2="140" />
+      <line x1="200" y1="35" x2="300" y2="140" />
+      <line x1="200" y1="35" x2="335" y2="140" />
+    </g>
+    <!-- Linha de Cumeeira -->
+    <line x1="200" y1="20" x2="200" y2="140" stroke="#ffc72c" stroke-width="4" />
+
+    <!-- Calha e Rufos em Alumínio Protegido -->
+    <rect x="25" y="136" width="350" height="10" rx="3" fill="#cbd5e1" />
+    
+    <!-- Linha de Vida de Ancoragem para Trabalho em Telhado -->
+    <line x1="100" y1="15" x2="300" y2="15" stroke="#ffc72c" stroke-width="3" stroke-dasharray="6,3" />
+    <circle cx="200" cy="15" r="5" fill="#f05a28" />
+
+    <!-- Brilho de Resina Térmica Protetora -->
+    <path d="M 280 60 L 283 68 L 291 71 L 283 74 L 280 82 L 277 74 L 269 71 L 277 68 Z" fill="#ffffff" />
+  </g>
+
+  <!-- Tag de Destaque -->
+  <rect x="330" y="30" width="240" height="34" rx="17" fill="#ea580c" />
+  <text x="450" y="52" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="12" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">RESTAURAÇÃO DE TELHADOS</text>
+</svg>

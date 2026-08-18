@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mapBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1a30" />
+      <stop offset="100%" stop-color="#112540" />
+    </linearGradient>
+    <linearGradient id="spStateGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a5f" />
+      <stop offset="100%" stop-color="#152e4d" />
+    </linearGradient>
+    <filter id="cityGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#ffc72c" flood-opacity="0.8" />
+    </filter>
+    <filter id="orangeGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#f05a28" flood-opacity="0.8" />
+    </filter>
+  </defs>
+
+  <!-- Fundo do Mapa -->
+  <rect width="900" height="560" rx="16" fill="url(#mapBg)" />
+
+  <!-- Grade de Coordenadas Náuticas/Cartográficas Sutis -->
+  <g stroke="#ffffff" stroke-width="0.5" opacity="0.08">
+    <line x1="100" y1="0" x2="100" y2="560" />
+    <line x1="250" y1="0" x2="250" y2="560" />
+    <line x1="400" y1="0" x2="400" y2="560" />
+    <line x1="550" y1="0" x2="550" y2="560" />
+    <line x1="700" y1="0" x2="700" y2="560" />
+    <line x1="850" y1="0" x2="850" y2="560" />
+    <line x1="0" y1="100" x2="900" y2="100" />
+    <line x1="0" y1="220" x2="900" y2="220" />
+    <line x1="0" y1="340" x2="900" y2="340" />
+    <line x1="0" y1="460" x2="900" y2="460" />
+  </g>
+
+  <!-- Contorno Geométrico Estilizado do Estado de São Paulo -->
+  <g transform="translate(60, 40)">
+    <!-- Polígono Vetorial Preciso representando o contorno de SP -->
+    <path d="M 120 180 
+             L 220 80 
+             L 340 40 
+             L 480 30 
+             L 590 60 
+             L 680 140 
+             L 760 170 
+             L 710 240 
+             L 660 330 
+             L 600 390 
+             L 520 440 
+             L 380 430 
+             L 260 380 
+             L 160 360 
+             L 80 320 
+             L 50 250 
+             Z" 
+          fill="url(#spStateGrad)" 
+          stroke="#ffc72c" 
+          stroke-width="2.5" 
+          stroke-linejoin="round" />
+
+    <!-- Rotas / Linhas de Conexão entre os Polos de Atendimento -->
+    <!-- Araçatuba -> Rio Preto -->
+    <line x1="220" y1="160" x2="360" y2="120" stroke="#ffc72c" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.8" />
+    <!-- Araçatuba -> Bauru -->
+    <line x1="220" y1="160" x2="380" y2="250" stroke="#ffc72c" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.8" />
+    <!-- Rio Preto -> Bauru -->
+    <line x1="360" y1="120" x2="380" y2="250" stroke="#ffc72c" stroke-width="2" stroke-dasharray="6,4" opacity="0.6" />
+    <!-- Bauru -> São Paulo Capital -->
+    <line x1="380" y1="250" x2="560" y2="340" stroke="#f05a28" stroke-width="3" stroke-dasharray="8,4" />
+    <!-- São Paulo Capital -> Litoral -->
+    <line x1="560" y1="340" x2="610" y2="390" stroke="#f05a28" stroke-width="3" />
+
+    <!-- ==================== PONTO 1: ARAÇATUBA E REGIÃO ==================== -->
+    <g transform="translate(220, 160)">
+      <circle cx="0" cy="0" r="16" fill="#f05a28" opacity="0.3" filter="url(#orangeGlow)" />
+      <circle cx="0" cy="0" r="9" fill="#f05a28" stroke="#ffffff" stroke-width="2" />
+      <rect x="-90" y="-45" width="180" height="32" rx="6" fill="#0b1a30" stroke="#f05a28" stroke-width="1.5" />
+      <text x="0" y="-24" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="12" fill="#ffc72c" text-anchor="middle">ARAÇATUBA</text>
+      <text x="0" y="-12" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="600" font-size="9" fill="#ffffff" text-anchor="middle">E TODA A REGIÃO</text>
+    </g>
+
+    <!-- ==================== PONTO 2: SÃO JOSÉ DO RIO PRETO E REGIÃO ==================== -->
+    <g transform="translate(360, 120)">
+      <circle cx="0" cy="0" r="16" fill="#ffc72c" opacity="0.3" filter="url(#cityGlow)" />
+      <circle cx="0" cy="0" r="9" fill="#ffc72c" stroke="#0b1a30" stroke-width="2" />
+      <rect x="-105" y="-45" width="210" height="32" rx="6" fill="#0b1a30" stroke="#ffc72c" stroke-width="1.5" />
+      <text x="0" y="-24" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="12" fill="#ffc72c" text-anchor="middle">SÃO JOSÉ DO RIO PRETO</text>
+      <text x="0" y="-12" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="600" font-size="9" fill="#ffffff" text-anchor="middle">E TODA A REGIÃO</text>
+    </g>
+
+    <!-- ==================== PONTO 3: BAURU ==================== -->
+    <g transform="translate(380, 250)">
+      <circle cx="0" cy="0" r="14" fill="#f05a28" opacity="0.3" filter="url(#orangeGlow)" />
+      <circle cx="0" cy="0" r="8" fill="#f05a28" stroke="#ffffff" stroke-width="2" />
+      <rect x="-70" y="15" width="140" height="28" rx="6" fill="#0b1a30" stroke="#f05a28" stroke-width="1.5" />
+      <text x="0" y="33" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="13" fill="#ffffff" text-anchor="middle">BAURU</text>
+    </g>
+
+    <!-- ==================== PONTO 4: SÃO PAULO — CAPITAL E REGIÃO ==================== -->
+    <g transform="translate(560, 340)">
+      <circle cx="0" cy="0" r="20" fill="#ffc72c" opacity="0.4" filter="url(#cityGlow)" />
+      <circle cx="0" cy="0" r="10" fill="#ffc72c" stroke="#0b1a30" stroke-width="2.5" />
+      <rect x="-105" y="-45" width="210" height="32" rx="6" fill="#0b1a30" stroke="#ffc72c" stroke-width="1.5" />
+      <text x="0" y="-24" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="12" fill="#ffc72c" text-anchor="middle">SÃO PAULO</text>
+      <text x="0" y="-12" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="600" font-size="9" fill="#ffffff" text-anchor="middle">CAPITAL E GRANDE SP</text>
+    </g>
+
+    <!-- ==================== PONTO 5: LITORAL DE SÃO PAULO ==================== -->
+    <g transform="translate(610, 390)">
+      <circle cx="0" cy="0" r="14" fill="#38bdf8" opacity="0.4" />
+      <circle cx="0" cy="0" r="8" fill="#38bdf8" stroke="#0b1a30" stroke-width="2" />
+      <rect x="-85" y="15" width="170" height="28" rx="6" fill="#0b1a30" stroke="#38bdf8" stroke-width="1.5" />
+      <text x="0" y="33" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="11.5" fill="#38bdf8" text-anchor="middle">LITORAL DE SÃO PAULO</text>
+    </g>
+  </g>
+
+  <!-- Legenda e Aviso Institucional no Rodapé do Mapa -->
+  <g transform="translate(50, 490)">
+    <rect x="0" y="0" width="800" height="46" rx="8" fill="#071222" stroke="#253e61" stroke-width="1.5" />
+    <circle cx="25" cy="23" r="7" fill="#ffc72c" />
+    <text x="42" y="27" font-family="'Inter', Arial, sans-serif" font-weight="500" font-size="12" fill="#cbd5e1">
+      Atendemos clientes em diferentes regiões do estado de São Paulo. Entre em contato para consultar a disponibilidade de atendimento.
+    </text>
+  </g>
+</svg>

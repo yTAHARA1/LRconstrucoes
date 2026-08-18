@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="galSol" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1a30" />
+      <stop offset="100%" stop-color="#0f2b48" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" rx="12" fill="url(#galSol)" />
+  <g transform="translate(60, 30)">
+    <polygon points="100,40 340,40 400,230 40,230" fill="#1e3a8a" stroke="#38bdf8" stroke-width="2" />
+    <line x1="85" y1="90" x2="355" y2="90" stroke="#38bdf8" stroke-width="1.5" />
+    <line x1="70" y1="140" x2="370" y2="140" stroke="#38bdf8" stroke-width="1.5" />
+    <line x1="55" y1="190" x2="385" y2="190" stroke="#38bdf8" stroke-width="1.5" />
+    <circle cx="380" cy="50" r="35" fill="#ffc72c" />
+  </g>
+  <rect x="0" y="360" width="600" height="90" fill="#071222" opacity="0.95" />
+  <rect x="30" y="378" width="130" height="24" rx="12" fill="#ffc72c" />
+  <text x="95" y="394" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="11" fill="#0b1a30" text-anchor="middle">ENERGIA SOLAR</text>
+  <text x="175" y="395" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="16" fill="#ffffff">Limpeza de Placas Solares Fotovoltaicas</text>
+  <text x="30" y="430" font-family="'Inter', Arial, sans-serif" font-weight="500" font-size="12" fill="#94a3b8">Conservação de equipamentos e recuperação da eficiência máxima de geração</text>
+</svg>
