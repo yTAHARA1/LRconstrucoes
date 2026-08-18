@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="160" viewBox="0 0 560 160" role="img" aria-labelledby="title desc">
+  <title id="title">LR Serviços e Manutenção</title>
+  <desc id="desc">Conceito temporário de logo em azul escuro, laranja e amarelo</desc>
+  <rect width="148" height="148" x="6" y="6" rx="22" fill="#071c2f"/>
+  <path d="M115 6h39v68l-26-13-13-21Z" fill="#f36b21"/>
+  <circle cx="132" cy="28" r="7" fill="#ffd43b"/>
+  <text x="29" y="105" fill="#fff" font-family="Arial,sans-serif" font-size="67" font-weight="800" letter-spacing="-6">LR</text>
+  <text x="182" y="72" fill="#071c2f" font-family="Arial,sans-serif" font-size="34" font-weight="800" letter-spacing="5">SERVIÇOS</text>
+  <rect x="183" y="85" width="330" height="5" rx="2.5" fill="#f36b21"/>
+  <text x="184" y="121" fill="#17496f" font-family="Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="6">&amp; MANUTENÇÃO</text>
+</svg>
+
