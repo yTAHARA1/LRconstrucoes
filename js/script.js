@@ -62,13 +62,14 @@
 
   const modal = $('.gallery-modal');
   const modalTitle = $('#modal-title');
-  const modalPlaceholder = $('.modal-placeholder');
+  const modalImage = $('#modal-image');
   if (modal && typeof modal.showModal === 'function') {
     galleryItems.forEach((item) => item.addEventListener('click', () => {
       const label = item.dataset.label || 'Serviço';
-      const category = item.dataset.category || '';
+      const photo = $('img', item);
       modalTitle.textContent = label;
-      modalPlaceholder.className = `modal-placeholder placeholder-art placeholder-${category}`;
+      modalImage.src = photo.src;
+      modalImage.alt = photo.alt;
       modal.showModal();
     }));
     $('.modal-close', modal)?.addEventListener('click', () => modal.close());
